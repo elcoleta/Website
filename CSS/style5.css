@@ -1,0 +1,218 @@
+/* General Body Styling */
+body {
+    background-color: #F9F8F8;
+    margin: 0;
+    padding: 0;
+    font-family: 'Helvetica', sans-serif;
+}
+
+/* Navigation Bar Styling */
+nav {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 1em 0;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 2;
+}
+
+/* Intro Section with Background Image */
+.intro-section {
+    position: relative;
+    height: 550px; /* Adjusts the height of the background image area */
+    background-image: url('../IMG/HaarlemRiver.png'); /* Background image for the intro */
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    text-align: center;
+    padding-top: 60px; /* Add padding to ensure text doesn't overlap with nav */
+}
+
+.intro-section h1 {
+    font-size: 48px;
+    color: white;
+    margin: 10px 0;
+}
+
+.intro-section h2 {
+    font-size: 24px;
+    color: white;
+    line-height: 1.5;
+    margin: 10px 0;
+}
+
+/* Logo Styling */
+.logo {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.logo img {
+    width: 100px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.website-name {
+    font-size: 24px;
+    color: white;
+    font-weight: bold;
+    font-family: 'Manrope', sans-serif;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    padding-right: 50px;
+    flex-grow: 1;
+}
+
+.nav-menu li {
+    margin: 0 20px;
+}
+
+.nav-menu a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 15px;
+}
+
+.nav-menu a:hover {
+    background-color: #fff;
+    color: #000;
+    border-radius: 20px;
+}
+
+/* Housing Section Styling */
+.housing-section {
+    margin: 80px 20px; /* Space from top and side */
+    text-align: center; /* Center text */
+}
+
+/* Centered Large Title Styling */
+.main-title {
+    font-size: 48px;
+    color: #333;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+/* Centered Sub-Title Styling */
+.sub-title {
+    font-size: 24px;
+    color: #555;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.housing-section p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    max-width: 800px; /* Limit paragraph width for better readability */
+    margin-left: auto; /* Center paragraph */
+    margin-right: auto; /* Center paragraph */
+}
+
+.housing-section img {
+    width: 100%; /* Responsive */
+    max-width: 600px; /* Limit image width */
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px; /* Space below images */
+}
+
+footer {
+    background-color: #2F4156; /* Black background */
+    padding: 30px;
+    text-align: center;
+    font-size: 18px; /* Larger text */
+    color: #fff; /* White text */
+    font-family: 'Helvetica', sans-serif;
+}
+
+footer a {
+    color: #F5EFEB; /* Yellow color for the email link */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Thin line after the text */
+.footer-line {
+    width: 100%;
+    height: 1px;
+    background-color: #666; /* Greyish line for subtle separation */
+    margin: 20px 0;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px; /* Increase space between icons */
+    margin-top: 20px;
+    position: relative; /* Positioning context for child elements */
+}
+
+.social-icon {
+    position: relative; /* This will be the container for the icon */
+    display: inline-block;
+    text-align: center; /* Center-align the text */
+}
+
+.social-icon i {
+    font-size: 40px; /* Size of the icon */
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.social-icon:hover i {
+    opacity: 0; /* Make the icon disappear on hover */
+    transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
+.social-icon::before {
+    content: attr(data-title); /* Display the name on hover */
+    position: absolute;
+    bottom: 10px; /* Adjust this value to move the name up or down */
+    left: 50%;
+    transform: translateX(-50%); /* Center the text below the icon */
+    color: #fff; /* Text color */
+    font-size: 16px; /* Font size */
+    font-weight: bold; /* Bold text */
+    text-transform: uppercase; /* Uppercase text */
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease; /* Smooth transition for opacity */
+}
+
+.social-icon:hover::before {
+    opacity: 1; /* Show text on hover */
+}
+
+/* Email link specific style */
+.email-link {
+    color: #ffcc00; /* Bright yellow for email link */
+    font-weight: bold;
+}
+
+.email-link:hover {
+    color: #ffeb3b; /* Lighter yellow on hover */
+}
+
+

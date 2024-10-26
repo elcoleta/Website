@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+    <link rel="stylesheet" type="text/css" href="CSS/style7.css" />
+    <link rel="icon" type="image/x-icon" href="IMG/logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <nav>
+            <figure class="logo">
+                <a href="HomePage.html"> 
+                    <img src="IMG/logo.png" alt="Logo" title="Haarlem Student Guide Logo"> 
+                </a> 
+                <figcaption class="website-name">HSG</figcaption>
+            </figure>
+            <ul class="nav-menu">
+                <li><a href="HomePage.html">Home</a></li>
+                <li><a href="Housing.html">Housing</a></li>
+                <li><a href="Transportation.html">Transportation</a></li>
+                <li><a href="Supermarkets.html">Supermarkets</a></li>
+                <li><a href="Activities.html">Activities</a></li>
+                <li><a href="contactPage.html">Contact</a></li>
+            </ul>
+        </nav>
+        
+<section class="intro-section">
+    <h1>Step into <strong>Haarlem</strong> with confidence!</h1>
+    <h2>The Haarlem Student Guide brings you the best tips, resources, and local secrets to help you thrive as a student.</h2>
+</section>
+    </header>
+
+    <!-- Contact Form Section -->
+    <section class="contact-section" id="Contact">
+        <h2>Contact Us</h2>
+        <form action="process.php" method="POST">
+            <fieldset>
+                
+                <legend>Contact Form</legend>
+                <p>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your name" required>
+            </p>
+            <p>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Your email address" required>
+            </p>
+            <p>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" cols="50" placeholder="Your message"></textarea>
+            </p>
+                <input type="submit" value="Submit">
+            </fieldset>
+        </form>
+    </section>
+
+    <footer>
+        <p>Terms and conditions: You accept our Terms & Conditions by using this website, which control how you can access and utilize our services. They describe your rights and responsibilities when using our site, so please read them carefully together with our privacy policy. Please use <a href="mailto:contact@haarlemstudentguide.com" class="email-link">contact@haarlemstudentguide.com</a> to contact us with any questions.</p>
+        <p>Copyright &copy; 2024 Haarlem Student Guide.</p>
+        <hr class="footer-line" />
+        <ul class="social-icons">
+            <li class="social-icon" data-title="Facebook">
+                <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+            </li>
+            <li class="social-icon" data-title="Instagram">
+                <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+            </li>
+        </ul>
+    </footer>
+</body>
+</html>
+
+

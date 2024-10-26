@@ -1,0 +1,235 @@
+/* General Body Styling */
+body {
+    background-color: #F9F8F8;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+/* Navigation Bar Styling */
+nav {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 1em 0;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 2;
+}
+
+/* Intro Section Styling */
+.intro-section {
+    position: relative;
+    height: 550px;
+    background-image: url('../IMG/HaarlemRiver.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 60px;
+}
+
+/* Intro Headings */
+.intro-section h1 {
+    font-size: 48px;
+    color: white;
+    margin: 10px 0;
+    /* Adding missing letter-spacing and word-spacing */
+    letter-spacing: 2px;
+    word-spacing: 4px;
+    text-transform: uppercase; /* Example of uppercase transformation */
+}
+
+.intro-section h2 {
+    font-size: 24px;
+    color: white;
+    line-height: 1.5;
+    margin: 10px 0;
+    text-indent: 20px; /* Adding text-indent */
+}
+
+/* Logo Styling */
+.logo {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    float: left; /* Adding float for Advanced CSS */
+}
+
+.logo img {
+    width: 100px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.website-name {
+    font-size: 24px;
+    color: white;
+    font-weight: bold;
+}
+
+/* Navigation Menu Styling */
+.nav-menu {
+    display: flex;
+    list-style: none;
+    padding-right: 50px;
+}
+
+.nav-menu li {
+    margin: 0 20px;
+}
+
+.nav-menu a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 15px;
+}
+
+/* Adding a pseudo-class for selected link */
+.nav-menu a:active {
+    color: #ffeb3b;
+}
+
+.nav-menu a:hover {
+    background-color: #fff;
+    color: #000;
+    border-radius: 20px;
+}
+
+/* Styling the first letter of content section paragraphs */
+.content-section p::first-letter {
+    font-size: 2em;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Content Section Styling */
+.content-section {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.p1-image {
+    width: 500px;
+    height: auto;
+    border-radius: 20px;
+}
+
+/* Wide Image Section Styling */
+.wide-image-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.wide-image {
+    width: 500px;
+    max-width: 50%;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+}
+
+/* CTA Section Text Styling */
+.cta-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.cta-text {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 18px;
+}
+
+/* Call-to-Action Button Styling */
+.yellow-button {
+    display: inline-block;
+    background-color: #FFD700;
+    color: #000;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.yellow-button:hover {
+    background-color: #FFC107;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #2F4156;
+    padding: 30px;
+    text-align: center;
+    color: #fff;
+    border-style: solid;
+    border-color: #666; /* Adding border color */
+    border-width: 1px; /* Adding border width */
+}
+
+footer a {
+    color: #F5EFEB;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.footer-line {
+    width: 100%;
+    height: 1px;
+    background-color: #666;
+    margin: 20px 0;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-top: 20px;
+}
+
+.social-icon {
+    display: inline-block;
+    font-size: 30px;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+    color: #ffeb3b;
+}
+
+/* Styling every nth-child for a hypothetical table */
+.table-row:nth-child(even) {
+    background-color: #CFF;
+}
+
+.table-row:nth-child(odd) {
+    background-color: #FFF;
+}
+
+/* Example of the child selector using ">" */
+nav > .nav-menu {
+    margin-right: 20px;
+}
